@@ -1,0 +1,44 @@
+@font-face {
+  font-family: xyz;
+  src: url(./BeautifulPeoplePersonalUse-dE0g.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+ 
+}
+.box{
+  background-image: url(./stars.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+   text-align: center;
+   padding-top: 250px;
+}
+
+h1{
+  color: whitesmoke;
+  font-size: 80px;
+  font-family: xyz;
+}
+
+button{
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+button:hover{
+  transform: scale(1.05);
+  background-color: #8F4E1E;
+}
