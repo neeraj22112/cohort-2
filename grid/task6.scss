@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "box1 box2 box2 box2"
+    "box1 box2 box2 box2"
+    "box1 box3 box4 box5";
+
+  div {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  div:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 5px 15px rgb(44, 44, 44);
+  }
+
+  .box1 {
+    grid-area: box1;
+    background-image: url(https://i.pinimg.com/1200x/ba/1c/4d/ba1c4d95af9afc916749b20a6036f907.jpg);
+  }
+
+  .box2 {
+    grid-area: box2;
+    background-image: url(https://i.pinimg.com/1200x/1b/1d/c3/1b1dc30e23d1ec71e239e0a6b4878c78.jpg);
+  }
+
+  .box3 {
+    grid-area: box3;
+    background-image: url(https://i.pinimg.com/1200x/9d/a1/61/9da1616d04e921ed4204976ab74d768e.jpg);
+  }
+
+  .box4 {
+    grid-area: box4;
+    background-image: url(https://i.pinimg.com/736x/e7/68/02/e76802f895ecc90b5e002a1894d11765.jpg);
+  }
+
+  .box5 {
+    grid-area: box5;
+    background-image: url(https://i.pinimg.com/736x/58/d8/29/58d82927abe58a2179e1396292c5addb.jpg);
+  }
+}
