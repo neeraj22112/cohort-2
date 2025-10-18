@@ -120,6 +120,92 @@ main {
       }
     }
   }
+
+  section.view3 {
+    width: 100%;
+    padding: 1rem;
+    @include flex-column(1rem);
+
+    .top {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 1rem;
+      }
+    }
+
+    .bottom {
+      background-color: rgb(56, 55, 55);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      @include flex-column(3rem);
+
+      .text {
+        @include flex-column(0.7rem);
+
+        h1 {
+          font-weight: 200;
+          font-size: 2.5rem;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-weight: 100;
+          opacity: 0.6;
+          font-size: 1.5rem;
+          line-height: 1.7rem;
+        }
+      }
+    }
+
+    .bottom > p {
+      text-transform: uppercase;
+    }
+  }
+
+  section.view4 {
+    width: 100%;
+    padding: 1rem;
+    @include flex-column(1rem);
+
+    .top {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 1rem;
+      }
+    }
+
+    .bottom {
+      background-color: rgb(56, 55, 55);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      @include flex-column(3rem);
+
+      .text {
+        @include flex-column(0.7rem);
+
+        h1 {
+          font-weight: 200;
+          font-size: 2.5rem;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-weight: 100;
+          opacity: 0.6;
+          font-size: 1.5rem;
+          line-height: 1.7rem;
+        }
+      }
+    }
+
+    .bottom > p {
+      text-transform: uppercase;
+    }
+  }
 }
 
 @media (min-width: 900px) {
@@ -145,6 +231,71 @@ main {
 
           p {
             width: 85%;
+          }
+        }
+      }
+    }
+
+    section.view2 {
+      flex-direction: row;
+      padding: 1rem 3rem;
+    }
+
+    section.view3 {
+      flex-direction: row-reverse;
+      padding: 1rem 3rem;
+
+      .top,
+      .bottom {
+        width: 50%;
+      }
+
+      .bottom {
+        justify-content: space-between;
+        padding: 3rem;
+
+        .text {
+          h1 {
+            font-size: 3.5rem;
+          }
+        }
+
+        .phara {
+          display: flex;
+          gap: 2rem;
+
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    section.view4 {
+      flex-direction: row;
+      padding: 1rem 3rem;
+
+      .top,
+      .bottom {
+        width: 50%;
+      }
+
+      .bottom {
+        justify-content: space-between;
+        padding: 3rem;
+
+        .text {
+          h1 {
+            font-size: 3.5rem;
+          }
+        }
+
+        .phara {
+          display: flex;
+          gap: 2rem;
+
+          p {
+            font-size: 1rem;
           }
         }
       }
