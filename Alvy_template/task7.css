@@ -200,6 +200,58 @@ main section.view4 .bottom .text p {
 main section.view4 .bottom > p {
   text-transform: uppercase;
 }
+main section.view5 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+main section.view5 .card {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-image: url(./card1.webp);
+  background-size: cover;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section.view5 .card .icon,
+main section.view5 .card .bottom {
+  background-color: rgba(187, 187, 187, 0.375);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+main section.view5 .card .top {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main section.view5 .card .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main section.view5 .card .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+main section.view5 .card .bottom p {
+  text-transform: uppercase;
+}
+main section.view5 .card:nth-child(2) {
+  background-image: url(./card2.webp);
+}
+main section.view5 .card:nth-child(3) {
+  background-image: url(./card3.webp);
+}
 
 @media (min-width: 900px) {
   main section.view1 {
@@ -270,5 +322,13 @@ main section.view4 .bottom > p {
   }
   main section.view4 .bottom .phara p {
     font-size: 1rem;
+  }
+  main section.view5 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
+  main section.view5 .card {
+    width: 33%;
+    aspect-ratio: 1/1.2;
   }
 }/*# sourceMappingURL=task7.css.map */

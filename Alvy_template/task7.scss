@@ -206,6 +206,61 @@ main {
       text-transform: uppercase;
     }
   }
+
+  section.view5 {
+    @include flex-column(2rem);
+    width: 100%;
+    padding: 1rem;
+
+    .card {
+      width: 100%;
+      aspect-ratio: 1/1;
+      background-image: url(./card1.webp);
+      background-size: cover;
+      border-radius: 0.7rem;
+      @include flex-column(0rem);
+      justify-content: space-between;
+      padding: 1rem;
+
+      .icon,
+      .bottom {
+        background-color: rgba(187, 187, 187, 0.375);
+        backdrop-filter: blur(5px);
+        border: 1px solid white;
+        border-radius: 0.7rem;
+        padding: 0.5rem;
+      }
+
+      .top {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+      }
+
+      .icon {
+        width: fit-content;
+        border-radius: 50%;
+      }
+
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 1rem;
+
+        p {
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .card:nth-child(2) {
+      background-image: url(./card2.webp);
+    }
+
+    .card:nth-child(3) {
+      background-image: url(./card3.webp);
+    }
+  }
 }
 
 @media (min-width: 900px) {
@@ -298,6 +353,16 @@ main {
             font-size: 1rem;
           }
         }
+      }
+    }
+
+    section.view5 {
+      flex-direction: row;
+      padding: 1rem 4rem;
+
+      .card {
+        width: 33%;
+        aspect-ratio: 1/1.2;
       }
     }
   }
