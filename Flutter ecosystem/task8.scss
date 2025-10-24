@@ -9,3 +9,14 @@ body {
   height: 100%;
   width: 100%;
 }
+
+@mixin flex-column($gap: 0rem) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+main {
+  section .view1 {
+  }
+}
