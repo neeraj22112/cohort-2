@@ -8,4 +8,60 @@ html,
 body {
   height: 100%;
   width: 100%;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+section {
+  max-width: 2000px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0 rem;
+  justify-content: center;
+  align-items: center;
+}
+
+section.view1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0 rem;
+  align-items: center;
+  background: linear-gradient(35deg, #f9d6e2, #e5f7fd 60%);
+  padding: 5rem 1rem;
+}
+section.view1 .top .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.view1 .top .image img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section.view1 .top .heading {
+  margin-top: 5rem;
+}
+section.view1 .top .heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+section.view1 .bottom {
+  margin-top: 6rem;
+}
+section.view1 .bottom p {
+  font-size: 2.2rem;
+  color: black;
+  line-height: 1.3;
+  font-weight: 400;
 }/*# sourceMappingURL=task8.css.map */
