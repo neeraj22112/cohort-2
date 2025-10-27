@@ -25,43 +25,65 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-section.view1 {
+main section.view1 {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 0 rem;
   align-items: center;
-  background: linear-gradient(35deg, #f9d6e2, #e5f7fd 60%);
+  background: linear-gradient(35deg, #f9d6e2, #d9f4fd 60%);
   padding: 5rem 1rem;
 }
-section.view1 .top .image {
+main section.view1 .top .image {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section.view1 .top .image img {
+main section.view1 .top .image img {
   width: 100%;
-  max-width: 320px;
-  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
-section.view1 .top .heading {
+main section.view1 .top .heading {
   margin-top: 5rem;
 }
-section.view1 .top .heading h1 {
+main section.view1 .top .heading h1 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.1;
 }
-section.view1 .bottom {
+main section.view1 .bottom {
   margin-top: 6rem;
 }
-section.view1 .bottom p {
+main section.view1 .bottom p {
   font-size: 2.2rem;
   color: black;
   line-height: 1.3;
   font-weight: 400;
+}
+
+@media (min-width: 1150px) {
+  main section.view1 {
+    padding: 4rem 7rem;
+  }
+  main section.view1 .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  main section.view1 .top .image,
+  main section.view1 .top .heading {
+    width: 50%;
+  }
+  main section.view1 .top .heading {
+    padding: 1rem 5rem;
+  }
+  main section.view1 .top .heading h1 {
+    font-size: 4.5rem;
+  }
+  main section.view1 .bottom {
+    width: 70%;
+  }
 }/*# sourceMappingURL=task8.css.map */

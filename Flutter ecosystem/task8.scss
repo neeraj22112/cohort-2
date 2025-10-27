@@ -28,50 +28,79 @@ main {
   @include flex-column(0 rem);
   justify-content: center;
   align-items: center;
-}
 
-section.view1 {
-  text-align: center;
-  // max-width: 380px;
-  @include flex-column(0 rem);
-  align-items: center;
-  background: linear-gradient(35deg, #f9d6e2, #e5f7fd 60%);
-  padding: 5rem 1rem;
+  section.view1 {
+    text-align: center;
+    // max-width: 380px;
+    @include flex-column(0 rem);
+    align-items: center;
+    background: linear-gradient(35deg, #f9d6e2, #d9f4fd 60%);
+    padding: 5rem 1rem;
 
-  .top {
-    .image {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
+    .top {
+      .image {
         width: 100%;
-        max-width: 320px;
-        height: auto;
-        object-fit: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          // max-width: 320px;
+          // height: auto;
+          object-fit: contain;
+        }
+      }
+
+      .heading {
+        margin-top: 5rem;
+
+        h1 {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 1.1;
+        }
       }
     }
 
-    .heading {
-      margin-top: 5rem;
+    .bottom {
+      margin-top: 6rem;
 
-      h1 {
-        font-size: 3rem;
-        font-weight: 700;
-        line-height: 1.1;
+      p {
+        font-size: 2.2rem;
+        color: black;
+        line-height: 1.3;
+        font-weight: 400;
       }
     }
   }
+}
 
-  .bottom {
-    margin-top: 6rem;
+@media (min-width: 1150px) {
+  main {
+    section.view1 {
+      padding: 4rem 7rem;
+      .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
 
-    p {
-      font-size: 2.2rem;
-      color: black;
-      line-height: 1.3;
-      font-weight: 400;
+        .image,
+        .heading {
+          width: 50%;
+        }
+
+        .heading {
+          padding: 1rem 5rem;
+          h1 {
+            font-size: 4.5rem;
+          }
+        }
+      }
+      .bottom {
+        width: 70%;
+      }
     }
   }
 }
