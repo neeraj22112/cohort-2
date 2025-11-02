@@ -26,12 +26,10 @@ section {
 
 main {
   @include flex-column(0 rem);
-  justify-content: center;
-  align-items: center;
 
   section.view1 {
     text-align: center;
-    // max-width: 380px;
+    width: 100%;
     @include flex-column(0 rem);
     align-items: center;
     background: linear-gradient(35deg, #f9d6e2, #d9f4fd 60%);
@@ -46,8 +44,6 @@ main {
 
         img {
           width: 100%;
-          // max-width: 320px;
-          // height: auto;
           object-fit: contain;
         }
       }
@@ -73,6 +69,9 @@ main {
         font-weight: 400;
       }
     }
+  }
+
+  section.view2 {
   }
 }
 
